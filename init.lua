@@ -204,7 +204,7 @@ for name, selection_box in pairs(selection_boxes) do
 				fixed = selection_box,
 			},
 			groups = {cracky = 3, oddly_breakable_by_hand = 3},
-			use_texture_alpha = true,
+			use_texture_alpha = "clip",
 			sounds = default.node_sound_glass_defaults()
 		})
 		
@@ -228,6 +228,7 @@ for name, selection_box in pairs(selection_boxes) do
 			drawtype = "nodebox",
 			tiles = {pane[4], pane[4], pane[3]},
 			wield_image = pane[3],
+			use_texture_alpha = "clip",
 			paramtype = "light",
 			paramtype2 = "facedir",
 			sunlight_propagates = true,
@@ -263,6 +264,7 @@ xpanes.register_pane("bar_top", {
 	textures = {"glass_stained_bar_fancy.png", "xpanes_pane_half.png", "default_glass_detail.png"},
 	inventory_image = "glass_stained_bar_fancy.png",
 	wield_image = "glass_stained_bar_fancy.png",
+	use_texture_alpha = "clip",
 	groups = {cracky = 2},
 	sounds = default.node_sound_metal_defaults(),
 	recipe = {
@@ -277,6 +279,7 @@ xpanes.register_pane("pane", {
 	textures = {"default_glass.png","xpanes_pane_half.png","glass_stained_edge.png"},
 	inventory_image = "default_glass.png",
 	wield_image = "default_glass.png",
+	use_texture_alpha = "clip",
 	sounds = default.node_sound_glass_defaults(),
 	groups = {snappy = 2, cracky = 3, oddly_breakable_by_hand = 3},
 	recipe = {
@@ -290,6 +293,7 @@ xpanes.register_pane("obsidian_pane", {
 	textures = {"default_obsidian_glass.png","xpanes_pane_half.png","xpanes_edge_obsidian.png"},
 	inventory_image = "default_obsidian_glass.png",
 	wield_image = "default_obsidian_glass.png",
+	use_texture_alpha = "clip",
 	sounds = default.node_sound_glass_defaults(),
 	groups = {snappy = 2, cracky = 3},
 	recipe = {
@@ -303,6 +307,7 @@ minetest.register_node("glass_stained:pane_bar_top_pane_single", {
 	drawtype = "nodebox",
 	tiles = {"blank.png", "blank.png", "glass_stained_bar_fancy.png"},
 	wield_image = "glass_stained_bar_fancy.png",
+	use_texture_alpha = "clip",
 	paramtype = "light",
 	paramtype2 = "facedir",
 	sunlight_propagates = true,
@@ -324,6 +329,7 @@ minetest.register_node("glass_stained:pane_bar_top_pane_offset", {
 	drawtype = "nodebox",
 	tiles = {"blank.png", "blank.png", "glass_stained_bar_fancy.png"},
 	wield_image = "glass_stained_bar_fancy.png",
+	use_texture_alpha = "clip",
 	paramtype = "light",
 	paramtype2 = "facedir",
 	sunlight_propagates = true,
